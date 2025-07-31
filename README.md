@@ -1,12 +1,51 @@
-# React + Vite
+# 🌐 Manmath Dummanwar's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my **personal portfolio website** built using **React.js** and **Vite**, deployed on **Vercel**.  
+It highlights my skills, projects, certifications, and offers ways to connect professionally.
 
-Currently, two official plugins are available:
+## 🚀 Live Website  
+🔗 [Visit Portfolio](https://portfolio-six-tau-qcc70y5uyo.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👨‍💻 About Me
 
-## Expanding the ESLint configuration
+Hi there! I'm **Dummanwar Manmath**, a B.Tech student at Malla Reddy University, specializing in **Artificial Intelligence and Machine Learning**.  
+I'm passionate about full-stack development, AI, and building projects that solve real-world problems.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- ⚛️ React.js
+- ⚡ Vite
+- 🎨 CSS3 (custom design)
+- 🌐 Vercel (deployment)
+
+## 📂 Project Structure
+Portfolio/
+├── public/
+├── src/
+│ ├── components/
+│ ├── pages/
+│ └── assets/
+├── index.html
+├── package.json
+└── vite.config.js
+
+
+## ✨ Features
+
+- 📱 Mobile responsive
+- 📄 Resume download option
+- 📬 Contact form
+- 🧠 Skills section
+- 📸 Project showcases
+- 🏅 Certificates display
+
+## 📬 Contact Me
+
+- 🔗 LinkedIn: [linkedin.com/in/dummanwar-manmath-074625331](https://www.linkedin.com/in/dummanwar-manmath-074625331/)
+- 🐙 GitHub: [github.com/manmathd](https://github.com/manmathd)
+- 📍 Hyderabad, Telangana
+
+
+---
+
+> Built with ❤️ by **Dummanwar Manmath**
