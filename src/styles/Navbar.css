@@ -1,0 +1,151 @@
+.navbar {
+  background-color: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: rgba(10, 25, 47, 0.98);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #64ffda;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+.brand-text {
+  font-size: 1.8rem;
+  color: #64ffda;
+  font-weight: 700;
+  white-space: nowrap;
+  font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  position: relative;
+  font-family: 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
+}
+
+.navbar-links li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #64ffda;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #64ffda;
+}
+
+.navbar-links li a:hover::before {
+  width: 100%;
+}
+
+/* Active link */
+.navbar-links li a.active {
+  color: #64ffda;
+}
+
+.navbar-links li a.active::before {
+  width: 100%;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #64ffda;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .brand-text {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-logo img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 25, 47, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+}
